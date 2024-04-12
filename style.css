@@ -1,0 +1,222 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: valorax;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.screen {
+
+    height: 100%;
+    width: 100%;
+    background-color: #2beee1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.screen h1 {
+    color: #656565;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 160px;
+}
+
+.screen button {
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    font-size: 40px;
+    color: #656565;
+    border: 2px solid black;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.screen button:active {
+    scale: 0.9;
+
+}
+
+
+.screen h2 {
+    color: #303030;
+    font-size: 60px;
+
+}
+
+.elemcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+
+
+}
+
+.elem {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+
+.elem img {
+    height: 130px;
+    width: 130px;
+}
+
+.scorepart {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(133, 133, 133);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   position: relative;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    gap: 10px;
+    padding: 0px 10px;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    gap: 10px;
+    padding: 0px 10px;
+    
+}
+
+h3 {
+    color: rgb(41, 41, 41);
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+}
+
+.gamepart {
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+.gamepart img {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    
+
+}
+#gameover{
+    height: 500px;
+    width: 800px;
+    background-color: rgb(111, 111, 111);
+    color: black;
+    position: absolute;
+    display: none;
+}
+#gameover h1{
+    color: black;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 80px;
+}
+#restart{
+    position: absolute;
+    margin-top: -15%;
+    margin-left: 34%;
+    padding: 10px 20px;
+    z-index: 999999;
+}
+
+@media (max-width: 600px) {
+    .screen h1 {
+        font-size: 8vw;
+        margin-bottom: 20px;
+        margin-top: -15%;
+    }
+
+    .screen button {
+        margin-top: 25%;
+        font-size: 6vw;
+        padding: 5px 10px;
+    }
+
+    .screen h2 {
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .elemcontainer {
+        gap: 3px;
+        margin-top: -50%;
+    }
+
+    .elem{
+        height: 90px;
+        width: 90px;
+        max-height: none;
+        max-width: none;
+    }
+    .elem img {
+        height: 70px;
+        width: 70px;
+        max-height: none;
+        max-width: none;
+    }
+
+    .scorepart {
+        height: 70px;
+        width: 105%;
+        margin-top: -37%;
+        padding: 0px;
+    }
+
+    .timer,
+    .score {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .gamepart {
+        height: 60vh;
+    }
+
+    .gamepart img {
+        height: 70px;
+        width: 70px;
+    }
+    #restart{
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 40%;
+        padding: 10px 20px;
+        z-index: 999999;
+    }
+}
